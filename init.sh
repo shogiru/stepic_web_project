@@ -1,4 +1,4 @@
-# sudo rm etc/nginx/sites-enabled/default
+# sudo rm /etc/nginx/sites-enabled/default
 sudo ﻿cp /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/test2.conf
 sudo /etc/init.d/nginx restart
 # sudo cp /home/box/web/etc/gunicorn.conf   /etc/gunicorn.d/test
