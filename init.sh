@@ -1,7 +1,5 @@
 #!/bin/bash
 
-git clone https://github.com/shogiru/stepic_web_project.git /home/box/web
-
 sudo rm /etc/nginx/sites-enabled/default
 sudo cp /home/box/web/etc/nginx.conf  /etc/nginx/sites-enabled/test.conf
 sudo /etc/init.d/nginx restart
