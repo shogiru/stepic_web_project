@@ -18,4 +18,11 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'^$', include('qa.urls')),
+    path(r'^login/', include('qa.urls')),
+    path(r'^signup/', include('qa.urls')),
+    path(r'^question/(\d+)/', include('qa.urls')),
+    path(r'^ask/', include('qa.urls')),
+    path(r'^popular/', include('qa.urls')),
+    path(r'^new/', include('qa.urls')),
 ]
